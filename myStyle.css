@@ -1,0 +1,169 @@
+/* myStyle.css */
+body {
+  background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10%;
+}
+table {
+    border: thick solid black;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+/*Navigation bar style */
+ul.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+    ul.navBar li {
+        float: left;
+    }
+    ul.navBar li:last-child {
+        float: right;
+    }
+        ul.navBar li a {
+            font-size: xx-large;
+            color: #B18A36;
+            display: block;
+            padding: .5em;
+            margin-left: .5em;
+            margin-right:.5em;
+            text-decoration: none;
+        }
+        ul.navBar li a.active {
+            font-size: xx-large;
+            background-color: #B18A36;
+            color: black;
+            display: block;
+            padding: .5em;
+            margin-left: .5em;
+            margin-right:.5em;
+            text-decoration: none;
+        }
+            ul.navBar li a:hover:not(.active) {
+                background-color: #111;
+            }
+/* Social media bar style */
+ul.socialMediaBar {
+  text-align: center;
+  padding: 0%;
+  width: 75%;
+  margin: auto;
+  z-index: 1;
+}
+    ul.socialMediaBar li {
+      display: inline-block;
+    }
+      ul.socialMediaBar li a {
+        display: block;
+        margin-right: .5em;
+        padding-right: .5em;
+      }
+        ul.socialMediaBar li a img {
+          height: 5em;
+          width: 5em;
+        }
+/* Header image style */
+p.header_image {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 1;
+}
+    p.header_image img {
+        width: 500px;
+        height: 500px;
+        border-radius: 250px;
+    }
+
+ul.mainContentImage {
+  text-align: center;
+  padding: 0%;
+  width: 75%;
+  margin: auto;
+  z-index: 1;
+}
+    ul.mainContentImage li {
+      display: inline-block;
+    }
+      ul.mainContentImage li figure {
+          margin: 1em;
+      }
+        ul.mainContentImage li figure img {
+          height: 20em;
+          width: 20em;
+        }
+div.resumeButton {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    z-index: 1;
+}
+    div.resumeButton a {
+        text-decoration: none;
+        font-size: large;
+        font-weight: bolder;
+        text-align: center;
+        color: #B18A36;
+        background-color: black;
+        padding: 2.5%;
+        width: 25%;
+        float: left;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-bottom: .5em;
+    }
+        div.resumeButton a:hover {
+            color: black;
+            background-color: #B18A36;
+        }
+/*header content style */
+#headers {
+  color: black;
+  font-weight: bolder;
+  font-size: xx-large;
+  background-color: inherit;
+  text-align: center;
+}
+#sectionHeaders {
+  color: black;
+  font-weight: bolder;
+  font-size: xx-large;
+  background-color: inherit;
+  text-align: left;
+  margin-left: 12.5%;
+  text-decoration: underline;
+
+}
+#mainContent {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  text-indent: 2em;
+  font-size: large;
+  width: 75%;
+}
+
+
+#singleLine {
+    float: left;
+    clear: left;
+    width: 7.5em;
+    text-align: left;
+    margin-right: .5em;
+}
+
+#center{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: thick solid black;
+}

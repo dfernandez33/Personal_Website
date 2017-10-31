@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+
+<head>
+  <meta charset = "UTF-8">
+  <title> Contact Me</title>
+  <link rel = "stylesheet"
+        type = "text/css"
+        href = "myStyle.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/b5b47d7508.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+
+
+<body>
+    <!-- Navigation bar for all pages-->
+    <ul class = "navBar animated fadeInDown">
+      <li>
+        <a href = "Home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <li>
+        <a href = "previousProject.html"><i class="fa fa-code-fork" aria-hidden="true"></i> Past Projects</a>
+      </li>
+      <li>
+        <a href = "Resume.html"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a>
+      </li>
+      <li>
+        <a href = ""><i class="fa fa-trophy" aria-hidden="true"></i> Achievments</a>
+      </li>
+      <li>
+        <a href = "contactMe.html" class="active"><i class="fa fa-phone" aria-hidden="true"></i> Contact Me</a>
+      </li>
+    </ul>
+
+  <h1 id = "headers">This is my second webpage</h1>
+  <h2 id = "headers">This page is accesed by a link in my first page</h2>
+
+  <h1 id = "headers">I'm going to make a form in this second website I made</h1>
+  <form action = "">
+    <fieldset>
+      <legend>Personal Data</legend>
+      <p>
+        <label id = "singleLine">Name</label>
+        <input type = "text"
+               value = "John Doe"/>
+      </p>
+      <p>
+        <label id = "singleLine">Date of Birth</label>
+        <input type = "date"
+               id = "date"/>
+      </p>
+      <p>
+        <label id = "singleLine">Email</label>
+        <input type = "email"
+               id = "txtEmail"
+               value = "john.doe@hotmail.com"/>
+      </p>
+      <p>
+        <label id = "singleLine">Phone Number</label>
+        <input type = "text"
+               value = "xxx-xxx-xxxx"/>
+      </p>
+      <p>
+        <label>Choose your favorite color from the drop down menu</label>
+        <select id = "selcolor">
+          <option value = "#ff0000">Red</option>
+          <option value = "#00ff00">Green</option>
+          <option value = "#0000ff">Blue</option>
+          <option value = "#ffffff">White</option>
+          <option value = "#000000">Black</option>
+        </select>
+      </p>
+      <p>
+        Check all that apply.
+      </p>
+      <p>
+        <input type = "checkbox"
+               id = "lovecats"
+               value = "loveCats"/>I love Cats!
+        <input type = "checkbox"
+               id = "lovedogs"
+               value = "loveDogs"/>I love Dogs!
+        <input type = "checkbox"
+               id = "foobar"
+               value = "fooBar"/>foo bar is stupid!
+      </p>
+      <p>
+        How cool is this website?
+      </p>
+      <p>
+        <input type = "radio"
+               name = "coolness"
+               id = "notVery"
+               value = "ehhh..."/>ehhh...
+       <input type = "radio"
+              name = "coolness"
+              id = "okay"
+              value = "prettyCool"/>Pretty Cool!
+        <input type = "radio"
+               name = "coolness"
+               id = "tooCool"
+               value = "tooCool"/>This is the coolest thing I've ever seen!
+      </p>
+      <p>
+        <label>Comment on my page!</label>
+      </p>
+      <p>
+        <textarea id = "comment"
+                  rows = "10"
+                  cols = "40"></textarea>
+      </p>
+      <p>
+        <input id = "formButton" type = "submit"/>
+        <input id = "formButton" type = "reset"/>
+      </p>
+    </fieldset>
+  </form>
+  <p>
+    If you want to go back to my first page click below
+  </p>
+  <p>
+    <button type = "button">
+      <a href = "myFirst.html">BACK</a>
+    </button>
+  </p>
+
+</body>
+</html>

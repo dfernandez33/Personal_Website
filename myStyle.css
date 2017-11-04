@@ -1,6 +1,6 @@
 /* myStyle.css */
 body {
-  background-color: white;
+  background-color: #2E4077;
   margin-left: 0;
   margin-right: 0;
   margin-top: 10%;
@@ -11,34 +11,46 @@ table {
     margin-right: auto;
     clear: both;
 }
+form {
+  background-color: white;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+fieldset {
+  border: none;
+}
+input {
+  background-color: #A29F91;
+}
 /*Navigation bar style */
-ul.navBar {
+.navBar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color:  #B18A36;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
 }
-    ul.navBar li {
+    .navBar li {
         float: left;
     }
-    ul.navBar li:last-child {
+    .navBar li:last-child {
         float: right;
     }
-        ul.navBar li a {
+        .navBar li a {
             font-size: xx-large;
-            color: #B18A36;
+            color: white;
             display: block;
             padding: .5em;
             margin-left: .5em;
             margin-right:.5em;
             text-decoration: none;
         }
-        ul.navBar li a.active {
+        .navBar li a.active {
             font-size: xx-large;
             background-color: #B18A36;
             color: black;
@@ -48,72 +60,81 @@ ul.navBar {
             margin-right:.5em;
             text-decoration: none;
         }
-            ul.navBar li a:hover:not(.active) {
-                background-color: #111;
+            .navBar li a:hover:not(.active) {
+                background-color: #B18A36;
+                color: black;
             }
 /* Social media bar style */
-ul.socialMediaBar {
+.socialMediaBar {
   text-align: center;
   padding: 0%;
   width: 75%;
   margin: auto;
   z-index: 1;
 }
-    ul.socialMediaBar li {
+    .socialMediaBar li {
       display: inline-block;
     }
-      ul.socialMediaBar li a {
+      .socialMediaBar li a {
         display: block;
         margin-right: .5em;
         padding-right: .5em;
       }
-        ul.socialMediaBar li a img {
+        .socialMediaBar li a img {
           height: 5em;
           width: 5em;
         }
 /* Header image style */
-p.header_image {
+.header_image {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     z-index: 1;
 }
-    p.header_image img {
+    .header_image img {
         width: 500px;
         height: 500px;
         border-radius: 250px;
     }
 
-ul.mainContentImage {
-  text-align: center;
-  padding: 0%;
-  width: 75%;
-  margin: auto;
-  z-index: 1;
+.mainContentImage {
+    text-align: center;
+    padding: 0%;
+    width: 75%;
+    margin: auto;
+    z-index: 1;
 }
-    ul.mainContentImage li {
+    .mainContentImage li {
       display: inline-block;
     }
-      ul.mainContentImage li figure {
-          margin: 1em;
+    .mainContentImage li:first-child {
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+    .mainContentImage li:last-child {
+      float: right;
+    }
+      .mainContentImage li figure {
+          display: block;
       }
-        ul.mainContentImage li figure img {
-          height: 20em;
-          width: 20em;
+        .mainContentImage li figure img {
+          height: 15em;
+          width: 15em;
         }
-div.resumeButton {
+.resumeButton {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
     z-index: 1;
 }
-    div.resumeButton a {
+    .resumeButton a {
         text-decoration: none;
         font-size: large;
         font-weight: bolder;
         text-align: center;
-        color: #B18A36;
-        background-color: black;
+        color: white;
+        background-color: #B18A36;
         padding: 2.5%;
         width: 25%;
         float: left;
@@ -121,13 +142,50 @@ div.resumeButton {
         margin-left: 10%;
         margin-bottom: .5em;
     }
-        div.resumeButton a:hover {
+        .resumeButton a:hover {
             color: black;
             background-color: #B18A36;
         }
+.Button {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  padding: 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+  .Button li {
+    width: 25%;
+    z-index: 1;
+    display: inline;
+    padding-right: 2em;
+  }
+    .Button li a {
+        text-decoration: none;
+        font-size: large;
+        font-weight: bolder;
+        text-align: center;
+        color: white;
+        background-color: #B18A36;
+        padding: 2.5%;
+        width: 25%;
+    }
+        .Button li a:hover {
+            color: black;
+            background-color: #B18A36;
+        }
+.container {
+    border: thin solid black;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: white;
+    z-index: 1;
+}
 /*header content style */
 #headers {
-  color: black;
+  color: white;
   font-weight: bolder;
   font-size: xx-large;
   background-color: inherit;
@@ -139,17 +197,14 @@ div.resumeButton {
   font-size: xx-large;
   background-color: inherit;
   text-align: left;
-  margin-left: 12.5%;
-  text-decoration: underline;
-
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 #mainContent {
-  margin-left: auto;
-  margin-right: auto;
   text-align: left;
-  text-indent: 2em;
   font-size: large;
-  width: 75%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 
@@ -166,4 +221,11 @@ div.resumeButton {
     margin-left: 25%;
     margin-right: 25%;
     border: thick solid black;
+}
+
+#presentation {
+  width: 75%;
+  height: 417px;
+  margin-left: 12.5%;
+  margin-right: 12.5  %;
 }

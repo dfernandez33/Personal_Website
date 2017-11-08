@@ -23,6 +23,9 @@ fieldset {
 input {
   background-color: #A29F91;
 }
+div {
+  border: thick solid black;
+}
 /*Navigation bar style */
 .navBar {
     list-style-type: none;
@@ -123,12 +126,31 @@ input {
           width: 15em;
         }
 .resumeButton {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    z-index: 1;
+
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: thick solid black;
 }
-    .resumeButton a {
+  .resumeButton li {
+    width: 100%;
+    z-index: 1;
+    display: inline;
+    padding-right: 2em;
+    border: thick solid black;
+    padding: 0;
+  }
+    .resumeButton li:first-child {
+      margin-left: 15%;
+      margin-right: 7.5%
+    }
+    .resumeButton li:last-child {
+      margin-left: 7.5%;
+      margin-right: 15%;
+    }
+    .resumeButton li a {
         text-decoration: none;
         font-size: large;
         font-weight: bolder;
@@ -136,13 +158,9 @@ input {
         color: white;
         background-color: #B18A36;
         padding: 2.5%;
-        width: 25%;
-        float: left;
-        margin-right: 10%;
-        margin-left: 10%;
-        margin-bottom: .5em;
+        width: 100%
     }
-        .resumeButton a:hover {
+        .resumeButton li a:hover {
             color: black;
             background-color: #B18A36;
         }
@@ -228,4 +246,11 @@ input {
   height: 417px;
   margin-left: 12.5%;
   margin-right: 12.5  %;
+}
+
+#resumeIframe {
+  width: 75%;
+  height: 100%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
 }

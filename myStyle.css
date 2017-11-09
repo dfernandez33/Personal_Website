@@ -125,18 +125,25 @@ div {
           width: 15em;
         }
 .resumeButton {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   padding: 0;
+  margin-left: 25%;
+  margin-right: 25%;
 }
   .resumeButton li {
     width:25%;
     z-index: 1;
     display: inline;
-    border: thick solid black;
-    margin-left: 25%;
-    margin-right: 0%;
   }
+    .resumeButton li:first-child {
+        margin-left: 17.5%;
+        margin-right: 7.5%;
+    }
+    .resumeButton li:last-child {
+        margin-left: 8%;
+        margin-right: 17.5%;
+    }
     .resumeButton li a {
         text-decoration: none;
         font-size: large;
@@ -145,7 +152,7 @@ div {
         color: white;
         background-color: #B18A36;
         width: 100%;
-        border: thin solid red;
+        padding: 2.5%;
     }
         .resumeButton li a:hover {
             color: black;
@@ -226,7 +233,7 @@ div {
 #center{
     width: 50%;
     margin-left: 25%;
-    margin-right: 25%;
+    margin-right: 24.25%;
     border: thick solid black;
 }
 

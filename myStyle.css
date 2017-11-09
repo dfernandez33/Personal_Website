@@ -31,7 +31,6 @@ div {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color:  #B18A36;
     position: fixed;
     top: 0;
@@ -126,30 +125,18 @@ div {
           width: 15em;
         }
 .resumeButton {
-
-  margin-left: 25%;
-  margin-right: 25%;
-  padding: 0;
   margin-top: 2em;
   margin-bottom: 2em;
-  border: thick solid black;
+  padding: 0;
 }
   .resumeButton li {
-    width: 100%;
+    width:25%;
     z-index: 1;
     display: inline;
-    padding-right: 2em;
     border: thick solid black;
-    padding: 0;
+    margin-left: 25%;
+    margin-right: 0%;
   }
-    .resumeButton li:first-child {
-      margin-left: 15%;
-      margin-right: 7.5%
-    }
-    .resumeButton li:last-child {
-      margin-left: 7.5%;
-      margin-right: 15%;
-    }
     .resumeButton li a {
         text-decoration: none;
         font-size: large;
@@ -157,19 +144,20 @@ div {
         text-align: center;
         color: white;
         background-color: #B18A36;
-        padding: 2.5%;
-        width: 100%
+        width: 100%;
+        border: thin solid red;
     }
         .resumeButton li a:hover {
             color: black;
             background-color: #B18A36;
         }
+
 .Button {
   margin-left: 2.5%;
   margin-right: 2.5%;
   padding: 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
 }
   .Button li {
     width: 25%;
@@ -209,6 +197,7 @@ div {
   background-color: inherit;
   text-align: center;
 }
+
 #sectionHeaders {
   color: black;
   font-weight: bolder;
@@ -218,13 +207,13 @@ div {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
+
 #mainContent {
   text-align: left;
   font-size: large;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
-
 
 #singleLine {
     float: left;
@@ -245,7 +234,7 @@ div {
   width: 75%;
   height: 417px;
   margin-left: 12.5%;
-  margin-right: 12.5  %;
+  margin-right: 12.5%;
 }
 
 #resumeIframe {

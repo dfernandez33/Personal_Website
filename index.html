@@ -3,7 +3,7 @@
 
 <head>
   <meta charset = "UTF-8">
-  <title> Past Projects</title>
+  <title> Home</title>
   <link rel = "stylesheet"
         type = "text/css"
         href = "myStyle.css" />
@@ -15,12 +15,35 @@
           window.scrollTo(0, 0);
       }
   </script>
+  <script>
+      function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topnav";
+          }
+      }
+  </script>
 </head>
 
 
 <body>
     <!-- Navigation bar for all pages-->
-    <ul class = "navBar animated fadeInDown">
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="previousProject.html"><i class="fa fa-code-fork"
+         aria-hidden="true"></i> Past Projects</a>
+      <a href="Resume.html"><i class="fa fa-file-text" aria-hidden="true"></i>
+         Resume</a>
+      <a href=""><i class="fa fa-trophy"
+         aria-hidden="true"></i> Achievments</a>
+      <a href = "contactMe.html"><i class="fa fa-phone" aria-hidden="true"></i>
+         Contact Me</a>
+      <a href="javascript:void(0);" class="icon"
+         onclick="myFunction()">&#9776;</a>
+    </div>
+    <!--<ul class = "navBar animated fadeInDown">
       <li>
         <a href = "index.html" class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
       </li>
@@ -36,7 +59,7 @@
       <li>
         <a href = "contactMe.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact Me</a>
       </li>
-    </ul>
+    </ul>-->
 
   <p class = "header_image">
     <img src = "home_page_pic.jpg"
@@ -113,9 +136,6 @@
           </figure>
       </li>
   </ul>
-
-
-
 
 </body>
 </html>

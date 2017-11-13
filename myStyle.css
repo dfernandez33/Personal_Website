@@ -26,8 +26,75 @@ input {
 div {
   border: thick solid black;
 }
+
+figcaption {
+  color: white;
+}
 /*Navigation bar style */
-.navBar {
+/* Add a black background color to the top navigation */
+.topnav {
+  margin: 0;
+  padding: 0;
+  background-color:  #B18A36;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  border: none;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: xx-large;
+    margin-left: 2.5%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #B18A36;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #B18A36;
+  color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1200px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*.navBar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -39,34 +106,35 @@ div {
     z-index: 10;
 }
     .navBar li {
-        float: left;
+      display: inline;
+      border: thick solid black;
+      padding: 1.5%;
+      padding-top: 1.5%;
+      padding-bottom: 1.5%;
+      margin-left: 2.5%;
     }
-    .navBar li:last-child {
-        float: right;
-    }
-        .navBar li a {
-            font-size: xx-large;
-            color: white;
-            display: block;
-            padding: .5em;
-            margin-left: .5em;
-            margin-right:.5em;
-            text-decoration: none;
-        }
-        .navBar li a.active {
-            font-size: xx-large;
-            background-color: #B18A36;
-            color: black;
-            display: block;
-            padding: .5em;
-            margin-left: .5em;
-            margin-right:.5em;
-            text-decoration: none;
-        }
-            .navBar li a:hover:not(.active) {
+      .navBar li:nth-child(4) {
+        margin-right: 8%;
+        border: thick solid red;
+      }
+      .navBar li:last-child {
+        margin-left: 8%;
+        margin-right: 0%;
+        border: thick solid red;
+      }
+          .navBar li a {
+              font-size: xx-large;
+              color: white;
+              text-decoration: none;
+          }
+            .navBar li a.active {
                 background-color: #B18A36;
                 color: black;
             }
+            .navBar li a:hover {
+                background-color: #B18A36;
+                color: black;
+            }*/
 /* Social media bar style */
 .socialMediaBar {
   text-align: center;
@@ -126,20 +194,17 @@ div {
           width: 15em;
         }
 .resumeButton {
-
   margin-left: 25%;
   margin-right: 25%;
   padding: 0;
   margin-top: 2em;
   margin-bottom: 2em;
-  border: thick solid black;
 }
   .resumeButton li {
     width: 100%;
     z-index: 1;
     display: inline;
     padding-right: 2em;
-    border: thick solid black;
     padding: 0;
   }
     .resumeButton li:first-child {

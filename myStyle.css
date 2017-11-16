@@ -26,9 +26,11 @@ input {
 div {
   border: thick solid black;
 }
-
 figcaption {
-  color: white;
+    color: white;
+    text-align: center;
+    width: 17.5em;
+    padding-left: 15%;
 }
 /*Navigation bar style */
 /* Add a black background color to the top navigation */
@@ -78,16 +80,6 @@ figcaption {
     float: right;
     display: block;
   }
-  .mainContentImage li {
-    width:450px; // adjust
-    height:450px; // adjust
-    padding: 5px;
-    border: thick solid black;
-  }
-    .mainContentImage li figure img {
-      width: 400px;
-      height: 400px;
-    }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -113,6 +105,20 @@ figcaption {
 
 }
 
+@media screen and (max-width: 1200px) {
+        .mainContentImage li {
+          width: 17.5em;
+          height: 17.5em;
+          margin-top: 2em;
+        }
+          .mainContentImage li:first-child {
+              margin-top: 0;
+          }
+          .mainContentImage li img {
+            width: 17.5em;
+            height: 17.5em;
+          }
+}
 /* Social media bar style */
 .socialMediaBar {
   text-align: center;
@@ -156,13 +162,14 @@ figcaption {
     .mainContentImage li {
       display: inline-block;
     }
-      .mainContentImage li figure {
-          display: block;
-      }
+        .mainContentImage li figure {
+            display: inline;
+        }
         .mainContentImage li figure img {
           height: 17.5em;
           width: 17.5em;
         }
+
 .resumeButton {
   margin-left: 25%;
   margin-right: 25%;
@@ -227,6 +234,7 @@ figcaption {
             color: black;
             background-color: #B18A36;
         }
+
 .container {
     border: thin solid black;
     width: 75%;
@@ -237,15 +245,19 @@ figcaption {
     background-color: white;
     z-index: 1;
 }
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: black;
 }
+
 ::-moz-placeholder { /* Firefox 19+ */
   color: black;
 }
+
 :-ms-input-placeholder { /* IE 10+ */
   color: black;
 }
+
 :-moz-placeholder { /* Firefox 18- */
   color: black;
 }

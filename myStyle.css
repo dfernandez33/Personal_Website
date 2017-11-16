@@ -237,6 +237,18 @@ figcaption {
     background-color: white;
     z-index: 1;
 }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
 /*header content style */
 #headers {
   color: white;
@@ -266,7 +278,7 @@ figcaption {
 #singleLine {
     float: left;
     clear: left;
-    width: 7.5em;
+    width: 15em;
     text-align: left;
     margin-right: .5em;
 }
